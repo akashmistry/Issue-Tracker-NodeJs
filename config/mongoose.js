@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 // CONNECTION TO THE DATABASE
-mongoose.connect("mongodb://localhost/issue_tracker");
+mongoose.connect("mongodb://localhost:27017/issue_tracker");
 
 // TO ACQUIRE THE CONNECTION (TO CHECK IF IT IS SUCCESSFUL)
 const db = mongoose.connection;
