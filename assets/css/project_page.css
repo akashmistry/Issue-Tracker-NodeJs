@@ -1,0 +1,19 @@
+#container {
+  display: flex;
+}
+
+#container #create-issue {
+  width: 30%;
+  height: 100%;
+  min-height: 90vh;
+  border-right: 2px solid rgb(223, 223, 223);
+  padding: 30px;
+}
+
+#container #issues {
+  width: 70%;
+  height: 100%;
+
+  padding: 30px;
+}
+/* <%-include('./partials/_issues'); %> */

@@ -1,0 +1,19 @@
+#home-container {
+  display: flex;
+}
+
+#home-container #create-project {
+  width: 30%;
+  height: 100%;
+  min-height: 90vh;
+  border-right: 2px solid rgb(223, 223, 223);
+  padding: 30px;
+}
+#home-container #projects {
+  width: 70%;
+  padding: 30px;
+}
+
+#create-project-button button {
+  /* float: right; */
+}
