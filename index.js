@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 2620;
+const PORT = process.env.PORT || 2620;
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
 
@@ -24,10 +24,10 @@ app.set("views", path.join(__dirname, "/views"));
 
 app.use("/", require("./routes"));
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
   if (err) {
     console.log("Oops error in running the sever:", err);
     return;
   }
-  console.log("🔥Firing up the Express server on: ", port, "🤙🏻");
+  console.log("🔥Firing up the Express server on: ", PORT, "🤙🏻");
 });
